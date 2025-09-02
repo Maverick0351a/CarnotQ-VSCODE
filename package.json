@@ -2,8 +2,8 @@
   "name": "carnotq",
   "displayName": "CarnotQ \u2014 Quantum Sandbox",
   "description": "An interactive, AI-assisted quantum learning sandbox inside VS Code. Build circuits, see the Bloch vector, and ask for explanations.",
-  "version": "0.2.0",
-  "publisher": "carnotq",
+  "version": "0.2.1",
+  "publisher": "odinsecureai",
   "repository": {
     "type": "git",
     "url": "https://github.com/maverick0351a/CarnotQ-VSCODE.git"
