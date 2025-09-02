@@ -6,12 +6,12 @@
   "publisher": "carnotq",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/carnotq.git"
+    "url": "https://github.com/maverick0351a/CarnotQ-VSCODE.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/carnotq/issues"
+    "url": "https://github.com/maverick0351a/CarnotQ-VSCODE/issues"
   },
-  "homepage": "https://github.com/your-org/carnotq#readme",
+  "homepage": "https://github.com/maverick0351a/CarnotQ-VSCODE#readme",
   "keywords": [
     "quantum",
     "education",
