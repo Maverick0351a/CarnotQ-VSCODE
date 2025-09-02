@@ -1,0 +1,70 @@
+{
+  "name": "carnotq",
+  "displayName": "CarnotQ \u2014 Quantum Sandbox",
+  "description": "An interactive, AI-assisted quantum learning sandbox inside VS Code. Build circuits, see the Bloch vector, and ask for explanations.",
+  "version": "0.2.0",
+  "publisher": "carnotq",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/carnotq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/carnotq/issues"
+  },
+  "homepage": "https://github.com/your-org/carnotq#readme",
+  "keywords": [
+    "quantum",
+    "education",
+    "qasm",
+    "bloch",
+    "circuit",
+    "learning"
+  ],
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "icon": "media/icon.png",
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "carnotq.openSandbox",
+        "title": "CarnotQ: Open Quantum Sandbox",
+        "category": "CarnotQ"
+      }
+    ],
+    "configuration": {
+      "title": "CarnotQ",
+      "properties": {
+        "carnotq.openai.apiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "OpenAI API key used for the **Explain** feature. Leave empty to copy prompts to clipboard instead."
+        },
+        "carnotq.openai.model": {
+          "type": "string",
+          "default": "gpt-4o-mini",
+          "markdownDescription": "Model name for **Explain** requests. Set to `gpt-5-pro` if your account supports it."
+        },
+        "carnotq.explain.includeMath": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "When enabled, the Explain output can include compact math."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "npx vsce package",
+    "test": "node tests/sim_harness.js"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}
