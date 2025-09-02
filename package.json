@@ -62,6 +62,7 @@
   },
   "scripts": {
     "package": "npx vsce package",
+  "publish": "vsce publish",
     "test": "node tests/sim_harness.js"
   },
   "devDependencies": {
